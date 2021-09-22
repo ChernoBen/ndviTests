@@ -32,9 +32,3 @@ imgUrl = requests.get(gallery[0], stream=True)
 with open("test.tiff", "wb") as handle:
     for data in tqdm(imgUrl.iter_content()):
         handle.write(data)
-raster = rasterio.open('test.tiff')
-arr = raster.read()
-red = arr[0][0]
-nir = arr[0][1]
-
-show(nir)
