@@ -27,8 +27,11 @@ gallery = []
 [ gallery.append(item['data']['ndvi']) for item in data ]
 
 #test imagem na primeira posição
-imgUrl = requests.get(gallery[0], stream=True)
+imgUrl = requests.get(gallery[6], stream=True)
 
 with open("test.tiff", "wb") as handle:
     for data in tqdm(imgUrl.iter_content()):
         handle.write(data)
+raster = rasterio.open('test.tiff')
+show(raster)
+show(raster.read()[0], cmap='summer')
