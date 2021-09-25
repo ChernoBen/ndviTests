@@ -5,7 +5,6 @@ Created on Thu Sep 16 08:39:14 2021
 
 @author: fang
 """
-
 '''
 Agromonitoring api key
 89572f5d18c309a566f85d2aec308733
