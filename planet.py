@@ -36,7 +36,6 @@ request = {
    ],
 }
 headers = {'content-type': 'application/json'}
-
 def place_order(request, auth):
     response = requests.post(apiUrl, data=json.dumps(request), auth=auth, headers=headers)
     print(response)
