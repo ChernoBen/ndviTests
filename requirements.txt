@@ -209,7 +209,7 @@ tornado==6.1
 traitlets==5.0.5
 typing-extensions==3.10.0.2
 udiskie==2.3.3
-ujson==4.1.0
+ujson==5.1.0
 urllib3==1.26.6
 watchdog==0.10.6
 wcwidth==0.2.5
